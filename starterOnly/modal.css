@@ -196,8 +196,24 @@ main {
 }
 
 .modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Alignement vertical */
   padding: 15px 8%;
   margin: 15px auto;
+  min-height: 800px; /* Ajustez selon la hauteur souhaitée */
+}
+
+.success-message {
+  color: white;
+  font-size: 36px;
+  text-align: center;
+  margin: auto 0; /* Centre verticalement le message de succès */
+}
+
+#close-button {
+  align-self: center; /* Centre horizontalement le bouton */
+  margin-bottom: 20px; /* Ajoutez un peu d'espace en bas */
 }
 
 label {
