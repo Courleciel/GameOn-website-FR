@@ -68,6 +68,13 @@ img {
   display: none;
 }
 
+/* Modal */
+
+.error-message {
+  color: red;
+  font-size: 12px;
+}
+
 @media screen and (max-width: 768px) {
   .topnav a {display: none;}
   .topnav a.icon {
@@ -99,7 +106,7 @@ img {
     display: block;
     margin-top: -15px;
   }
-} 
+}
 
 main {
   font-size: 130%;
@@ -226,7 +233,7 @@ input {
 .formData[data-error-visible="true"] .text-control {
   border: 2px solid #e54858;
 }
-/* 
+/*
 input[data-error]::after {
     content: attr(data-error);
     font-size: 0.4em;
@@ -526,4 +533,3 @@ footer {
     opacity: 1;
   }
 }
-

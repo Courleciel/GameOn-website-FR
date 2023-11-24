@@ -70,8 +70,8 @@
                   type="text"
                   id="first"
                   name="first"
-                  minlength="2"
-                /><br>
+                />  <span id="first-name-error" class="error-message"></span>
+                <br>
               </div>
               <div
                 class="formData">
@@ -81,7 +81,8 @@
                   type="text"
                   id="last"
                   name="last"
-                /><br>
+                /><span id="last-name-error" class="error-message"></span>
+                <br>
               </div>
               <div
                 class="formData">
@@ -91,7 +92,8 @@
                   type="email"
                   id="email"
                   name="email"
-                /><br>
+                />  <span id="email-error" class="error-message"></span>
+                <br>
               </div>
               <div
                 class="formData">
@@ -101,12 +103,14 @@
                   type="date"
                   id="birthdate"
                   name="birthdate"
-                /><br>
+                /><span id="birthdate-error" class="error-message"></span>
+                <br>
               </div>
               <div
                 class="formData">
                 <label>À combien de tournois GameOn avez-vous déjà participé ?</label><br>
                 <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99">
+                <span id="quantity-error" class="error-message"></span>
               </div>
               <p class="text-label">A quel tournoi souhaitez-vous participer cette année ?</p>
               <div
@@ -176,7 +180,7 @@
                 <label class="checkbox-label" for="location6">
                   <span class="checkbox-icon"></span>
                   Portland</label
-                >
+                ><br><span id="location-error" class="error-message"></span>
               </div>
 
               <div
@@ -191,6 +195,8 @@
                   <span class="checkbox-icon"></span>
                   J'ai lu et accepté les conditions d'utilisation.
                 </label>
+                <br>
+                <span id="terms-error" class="error-message"></span>
                 <br>
                 <input class="checkbox-input" type="checkbox" id="checkbox2" />
                 <label class="checkbox2-label" for="checkbox2">
