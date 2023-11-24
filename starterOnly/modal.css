@@ -68,13 +68,6 @@ img {
   display: none;
 }
 
-/* Modal */
-
-.error-message {
-  color: red;
-  font-size: 12px;
-}
-
 @media screen and (max-width: 768px) {
   .topnav a {display: none;}
   .topnav a.icon {
@@ -145,6 +138,18 @@ main {
 }
 
 /* Modal form */
+
+.error-message {
+  color: #FF4E60;
+  font-size: 12px;
+}
+
+.success-message {
+  color: white;
+  font-size: 36px;
+  display: none;
+  text-align: center;
+}
 
 .button {
   background: #fe142f;

@@ -30,6 +30,7 @@ function closeTheModal() {
 closeModal.addEventListener("click", closeTheModal);
 
 document.forms["reserve"].addEventListener("submit", function(e) {
+  e.preventDefault();
   var isValid = true;
 
   // Validation du prénom
@@ -109,8 +110,30 @@ document.forms["reserve"].addEventListener("submit", function(e) {
     termsError.textContent = "";
   }
 
+  if (isValid) {
+    // Cacher tous les autres éléments de la modal
+    var formElements = document.querySelectorAll(".modal-body .formData, .modal-body .btn-submit, .modal-body .text-label");
+    formElements.forEach(function(element) {
+      element.style.display = 'none';
+    });
+
+    // Afficher le message de succès
+    var successMessage = document.getElementById("success-message");
+    successMessage.textContent = "Merci ! Votre réservation a été reçue.";
+    successMessage.style.display = "block";
+
+    // Afficher le bouton "Fermer"
+    var closeButton = document.getElementById("close-button");
+    closeButton.style.display = "block";
+
+    // Gérer le clic sur le bouton "Fermer"
+    
+    closeButton.onclick = function() {
+    modalbg.style.display = "none";
+    };
+  }
   // Empêcher l'envoi du formulaire si la validation échoue
-  if(!isValid) {
+  else {
     e.preventDefault();
   }
 });

@@ -60,8 +60,9 @@
               name="reserve"
               action="index.html"
               method="get"
-              onsubmit="return validate();"
+
             >
+            <h1 id="success-message" class="success-message"></h1>
               <div
                 class="formData">
                 <label for="first">Prénom</label><br>
@@ -210,7 +211,14 @@
                 type="submit"
                 class="button"
                 value="C'est parti"
-              />
+              /><br>
+              <button
+              id="close-button"
+              class="btn-submit"
+              style="display: none;"
+              type="button"
+            >Fermer
+          </button>
             </form>
           </div>
         </div>
