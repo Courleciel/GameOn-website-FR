@@ -60,11 +60,11 @@
               name="reserve"
               action="index.html"
               method="get"
-
+              novalidate
             >
             <h1 id="success-message" class="success-message"></h1>
               <div
-                class="formData">
+                class="formData" id="first-form-data" data-error-visible="false">
                 <label for="first">Prénom</label><br>
                 <input
                   class="text-control"
@@ -75,7 +75,7 @@
                 <br>
               </div>
               <div
-                class="formData">
+                class="formData" id="last-form-data" data-error-visible="false">
                 <label for="last">Nom</label><br>
                 <input
                   class="text-control"
@@ -86,7 +86,7 @@
                 <br>
               </div>
               <div
-                class="formData">
+                class="formData" id="email-form-data" data-error-visible="false">
                 <label for="email">E-mail</label><br>
                 <input
                   class="text-control"
@@ -97,7 +97,7 @@
                 <br>
               </div>
               <div
-                class="formData">
+                class="formData" id="birthdate-form-data" data-error-visible="false">
                 <label>Date de naissance</label><br>
                 <input
                   class="text-control"
@@ -108,7 +108,7 @@
                 <br>
               </div>
               <div
-                class="formData">
+                class="formData" id="quantity-form-data" data-error-visible="false">
                 <label>À combien de tournois GameOn avez-vous déjà participé ?</label><br>
                 <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99">
                 <span id="quantity-error" class="error-message"></span>
