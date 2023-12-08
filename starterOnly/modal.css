@@ -73,53 +73,6 @@ img {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
-  .topnav a {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  #myTopnav {
-    display: block;
-    background: white;
-    padding: 3%;
-    margin: 5% auto -10px auto;
-    max-width: 500px;
-    text-align: center;
-    animation-name: modalopen;
-    animation-duration: var(--modal-duration);
-  }
-
-  #myTopnav img {
-    max-width: 70%;
-    height: auto;
-    margin: 10px;
-    margin-left: -30px;
-  }
-}
-
- @media screen and (max-width: 540px) {
-  .topnav a {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-    margin-top: -15px;
-  }
-}
 
 main {
   font-size: 130%;
@@ -218,22 +171,22 @@ main {
 .modal-body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Alignement vertical */
+  justify-content: space-between;
   padding: 15px 8%;
   margin: 15px auto;
-  min-height: 800px; /* Ajustez selon la hauteur souhaitée */
+  min-height: 800px;
 }
 
 .success-message {
   color: white;
   font-size: 36px;
   text-align: center;
-  margin: auto 0; /* Centre verticalement le message de succès */
+  margin: auto 0;
 }
 
 #close-button {
-  align-self: center; /* Centre horizontalement le bouton */
-  margin-bottom: 20px; /* Ajoutez un peu d'espace en bas */
+  align-self: center;
+  margin-bottom: 20px;
 }
 
 label {
@@ -274,12 +227,7 @@ input {
 .formData[data-error-visible="true"] .text-control {
   border: 2px solid #e54858;
 }
-/*
-input[data-error]::after {
-    content: attr(data-error);
-    font-size: 0.4em;
-    color: red;
-} */
+
 .checkbox-label,
 .checkbox2-label {
   position: relative;
@@ -562,6 +510,71 @@ footer {
   .copyrights {
     margin-top: 50px;
     text-align: center;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .topnav a {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .content {
+    margin: 0 auto 5% auto;
+    width: 100%;
+    max-width: unset;
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+    background: #232323;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    padding-top: 10px;
+    height: 100%;
+  }
+
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #myTopnav {
+    display: block;
+    background: white;
+    padding: 3%;
+    margin: 0 auto -10px auto;
+    text-align: center;
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+  }
+
+  #myTopnav img {
+    max-width: 70%;
+    height: auto;
+    margin: 10px;
+    margin-left: -30px;
+  }
+
+}
+
+ @media screen and (max-width: 540px) {
+  .topnav a {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+    margin-top: -15px;
   }
 }
 
